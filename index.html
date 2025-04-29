@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Moderna</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./images/logo/logo.png" alt="Logo de la empresa" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h1>¿Ya estas en la web?</h1>
+        <p>
+          Las mejoras landing page para llevar tu servicio o negocio al
+          siguiente nivel
+        </p>
+        <a href="#contacto" class="cta-button">Cotizar Ahora</a>
+      </div>
+    </section>
+
+    <section id="servicios" class="services">
+      <h2>Nuestros Servicios</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Desarrollo Web</h3>
+          <p>Creación de sitios web modernos y responsivos</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Diseño Móvil</h3>
+          <p>Experiencias móviles optimizadas</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Marketing Digital</h3>
+          <p>Estrategias efectivas de marketing online</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros" class="about">
+      <div class="about-content">
+        <h2>Sobre Nosotros</h2>
+        <p>
+          Somos un equipo apasionado por crear soluciones digitales innovadoras
+          que ayudan a las empresas a crecer y alcanzar sus objetivos.
+        </p>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2>Contáctanos</h2>
+      <form
+        class="contact-form"
+        action="mailto:tuemail@ejemplo.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="tel" name="telefono" placeholder="Teléfono" />
+        <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+        <button type="submit" class="submit-button">Enviar Mensaje</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2024 Todos los derechos reservados</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
