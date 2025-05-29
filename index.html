@@ -28,6 +28,25 @@
 
       gtag("config", "AW-17130925279");
     </script>
+
+    <!-- Event snippet for Contacto conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-17130925279/cjXcCPWF8c8aEN_Z1Og_",
+          value: 1.0,
+          currency: "CLP",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -56,7 +75,11 @@
           Las mejores páginas para captar nuevos clientes y llevar tu servicio o
           negocio al siguiente nivel
         </p>
-        <a href="https://wa.me/+56956463811" class="cta-button" target="_blank"
+        <a
+          href="https://wa.me/+56956463811"
+          onclick="gtag_report_conversion()"
+          class="cta-button"
+          target="_blank"
           >Cotizar ahora</a
         >
       </div>
@@ -131,7 +154,12 @@
     <script src="script.js"></script>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/+56956463811" class="whatsapp-float" target="_blank">
+    <a
+      href="https://wa.me/+56956463811"
+      onclick="gtag_report_conversion()"
+      class="whatsapp-float"
+      target="_blank"
+    >
       <i class="fab fa-whatsapp"></i>
     </a>
   </body>
